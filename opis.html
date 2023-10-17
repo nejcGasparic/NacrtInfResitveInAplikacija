@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>3. DN :: OIS 2020/2021</title>
+  <link href="knjiznice/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {padding-top: 70px;}
+  </style>
+  </style><link rel="icon" href="./favicon.png"/>
+  <script src="knjiznice/js/jquery-2.2.3.min.js"></script>
+  <script src="knjiznice/js/bootstrap.min.js"></script>
+  <script src="knjiznice/js/koda.js"></script>
+</head>
+<body>
+
+  <!-- ZAČETEK: Menujska vrstica na vrhu spletne strani -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menujska-vrstica">
+          <span class="sr-only">Prikaži menu</span>
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <!-- ZAČETEK: Ime vaše aplikacije -->
+        <a class="navbar-brand" href="index.html">eZdravnik</a>
+        <!-- KONEC: Ime vaše aplikacije -->
+      </div>
+      <div class="collapse navbar-collapse" id="menujska-vrstica">
+        <ul class="nav navbar-nav">
+          <li><a href="opis.html">Opis ideje</a></li>
+          <li><a href="nacrt.html">Načrt informacijske rešitve</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- KONEC: Menujska vrstica na vrhu spletne strani -->
+
+  <!-- ZAČETEK: Opis delovanja aplikacije -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Opis ideje, ki jo aplikacija podpira</h3>
+          </div>
+          <div class="panel-body">
+            <!-- ZAČETEK: Opis ideje, ki jo aplikacija podpira -->
+            <p>Aplikacija eZdravnik podpira vnose tistih vitalnih znakov (telesna temperatura,diastolični krvni tlak ter nasičenost krvi s kisikom),<br> na podlagi katerih je možno sumiti na okužbo z virusom COVID-19.<br>
+            Aplikacija bo na podlagi vnešenih vitalnih znakov ter morebitnih potavanj uporabnika te aplikacija prikazala možnost za okužbo z virusum.<br>
+          Cilji uporabniki so predvsem osebe, ki kažejo znake okužbe ter posamezniki, ki so v zadnjih 14 dnevih bili v tujini.<br>Namen razvoja te aplikacije je predvsem v tem, da ljudje, ki sumijo na okužbo
+          dobijo povratne informacije kolikšna je možnost, da so okuženi z COVID-19. 
+          <br>
+        </p>
+            <!-- KONEC: Opis ideje, ki jo aplikacija podpira -->
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Uporabljeni zunanji viri podatkov</h3>
+          </div>
+          <div class="panel-body">
+            <!-- ZAČETEK: Uporabljeni zunanji viri podatkov -->
+            <p>Za zunanji vir podatkov sem uporabil URL https://api.sledilnik.org/api/summary s pomočjo katerega na strani prikazujem<br>
+            statistične podatke o COVID-19. To so število novo obolelih, število trenutno aktivnih bolnikov, 7 dnevna incidenca ter število preminulih.<br>Omenjene podatke pridobim z neposrednim API klicem.  </p>
+            <!-- KONEC: Uporabljeni zunanji viri podatkov -->
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Master/detail načrtovalski vzorec</h3>
+          </div>
+          <div class="panel-body">
+            <!-- ZAČETEK: Master/detail načrtovalski vzorec -->
+            <p> Za master/detail sem uporabil dropdown meni, iz katerega uporabnik izbere enega od treh pacientov.<br>
+            Po kliku na enega izmed pacientov se izpolnijo podatki vnosnih polj, kot so: Ime, Priimek, Datum rojstva,<br>
+          EHR ID, telesna temp., diastolični krvni tlak ter nasičenost krvi s kisikom.</p>
+            <!-- KONEC: Master/detail načrtovalski vzorec -->
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Uporabljena tehnika za vizualizacijo podatkov</h3>
+          </div>
+          <div class="panel-body">
+            <!-- ZAČETEK: Uporabljeni zunanji viri podatkov -->
+            <p>Za vizualizacijo podatkov sem uporabil canvas.js graf. Za ta stil vizualizacije sem se odločil, ker z njim lahko nazorno
+            prikažem željene vrednosti posameznih vitalnih znakov. Na grafu se prikažejo telesna temperatura (stopinje celzije) ter 
+          ter procenti nasičenosti krvi s kisikom.</p>
+            <!-- KONEC: Uporabljeni zunanji viri podatkov -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- KONEC: Opis delovanja aplikacije -->
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+#statsHeading{
+    text-align: left;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.stNovoOkuzenih{
+    font-style: italic;
+    text-align: left;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 10px;
+}
+#stNovoOkuzenih{
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.stTrenutnih{
+    font-style: italic;
+    text-align: left;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 10px;
+}
+#stTrenutnih{
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.incidenca{
+    font-style: italic;
+    text-align: left;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 10px;
+}
+#incidenca{
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.stUmrlih{
+    font-style: italic;
+    text-align: left;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 10px;
+}
+#stUmrlih{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+.dataLine{
+    padding-right: 97px;
+}
+.date-time{
+    text-align: left;
+    font-size: 15px;
+    color:grey;
+}
+.panelHeader{
+    width: 50%;
+    padding-top: 20px;
+}
+.panelBody{
+    width: 50%;
+    padding-top: 20px;
+}
+.box{
+    width: 50%;
+}
+.nazivPolj{
+    text-align:left;
+    padding-top: 20px;
+}
+.vnosnaPolja{
+    width: 30%;
+}
+#osnovniPodatki{
+    width: 30%;
+    text-align: left;
+    padding-right: 80px;
+    left: 70px;
+}
